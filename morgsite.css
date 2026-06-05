@@ -1,0 +1,1164 @@
+html {
+    background-color:#353131;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.henny-penny-regular {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    margin:0;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh;
+    width:100%;
+    color:antiquewhite;
+    background: url(images/background.png);
+}
+
+h1 {
+  text-shadow: 1px 1px 2px pink;
+}
+
+h1:active{
+  animation: shakename 0.2s  ;
+}
+
+@keyframes shakename{
+  0%{
+    transform: translateX(0)
+  }
+  25%{
+    transform: translateX(10px);
+  }
+  
+  50%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+/* HOME PAGEF!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.wrapperhome{
+    display:grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 2fr .5fr;
+    min-height: 100vh;
+    min-width: 100vh;
+    margin:0;
+}
+
+.name {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-top:20%;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 8vw;
+    padding: 0;
+    margin-top: 6rem;
+    margin-bottom: 0;
+    max-width: 100%;
+   }
+   /*creating the shake animation*/
+
+
+.whatami {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding:0;
+    margin-top:0;
+    color:rgb(255, 173, 226);
+    font-size: 2vw;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.aboutme {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 150%;
+    font-family: "Risque", serif;
+    color:rgb(232, 210, 227);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+}
+
+.sidemorgui {
+    grid-row: 1/4;
+    grid-column: 2/3;
+    padding: 0;
+    margin-top: 10%;
+}
+
+  .sidemorgui:active{
+     animation:  shake 0.2s  ;
+   }
+ 
+   @keyframes shake{
+     0%{
+       transform: translateY(0)
+     }
+     25%{
+       transform: translateY(10px);
+     }
+     
+     50%{
+       transform: translateY(-10px);
+     }
+     100%{
+       transform: translateY(0px);
+     }
+   }
+
+/* ARTWORK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.wrapperartwork{
+    display:grid;
+    grid-template-rows: 2fr auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 2fr 2fr;
+    min-height: 100vh;
+    min-width: 100vh;
+    margin:0;
+}
+
+.artworktitles {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  font-size: 300%;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.gamescreenshots{
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.characterdesign{
+  grid-column: 2/4;
+  grid-row: 2/3;
+  margin-bottom: 0;
+}
+
+.backgrounds{
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.pixelart{
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
+
+.animation{
+  grid-column: 2/4;
+  grid-row: 5/6;
+}
+
+.graphicdesign{
+  grid-column: 2/4;
+  grid-row: 6/7;
+}
+
+.realismportraits{
+  grid-column: 2/4;
+  grid-row: 7/8;
+}
+
+
+.gamescreenright {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 45%;
+  margin: 1rem;
+  border:1px solid #e8d2e3;
+  box-shadow: 10px 10px 10px #1d1714;
+}
+
+.widescreen {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  width: 95%;
+  margin-left:1rem;
+  border:1px solid #e8d2e3;
+  box-shadow: 10px 10px 10px #1d1714;
+}
+
+.dilly {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 35%;
+  margin-left:4rem;
+  border:1px solid #e8d2e3;
+  box-shadow: 10px 10px 10px #1d1714;
+}
+
+.uma {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 45%;
+  margin: 1rem;
+  border:1px solid #e8d2e3;
+  box-shadow: 10px 10px 10px #1d1714;
+
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+}
+
+.dakota {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  width: 40%;
+  margin-left:3rem;
+  border:1px solid #e8d2e3;
+  box-shadow: 10px 10px 10px #1d1714;
+}
+
+.outfits {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 45%;
+  margin: 1rem;
+  border:1px solid #e8d2e3;
+  box-shadow: 10px 10px 10px #1d1714;
+
+  margin-bottom: 2rem;
+  margin-left: 2.5rem;
+}
+
+.artcaption {
+  margin: 0;
+  font-family: "Risque", serif;
+  margin-left: 38rem;
+  padding:0;
+}
+
+.artcaptionleft {
+  margin: 0;
+  font-family: "Risque", serif;
+  margin-left: 1rem;
+  padding:0;
+}
+
+.orderup {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 45%;
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  border:1px solid #e8d2e3;
+  box-shadow: 10px 10px 10px #1d1714;
+}
+
+
+.morein {
+  text-align: center;
+  margin: 0;
+  font-family: 'Risque', serif;
+}
+
+.morein a {
+  color:#e8d2e3;
+}
+
+.morein a:visited {
+  color:#e8d2e3;
+}
+
+.morein a:hover {
+  color:#ffffff;
+}
+
+.contents {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: fixed;
+    left: 15px;
+    top: 57%;
+    z-index: 1000;
+    text-align: center;
+    color:#2d2a2a;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #e8d2e3;
+    border: 10px dotted white;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.contents a {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Risque", serif;
+    font-size: 1.5rem;
+    color:#353131;
+    background-color: #ffffff;
+    border: 6px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.18);
+}
+
+#gamescreenshots, #characterdesign, #backgrounds, #graphicdesign, #realismportraits, #misc {
+    scroll-margin-top: 150px;
+}
+
+.contents a:hover {
+  color:antiquewhite;
+  background-color:#454342;
+}
+
+.toctitle {
+  top:26%;
+  margin-left: 4.5rem;
+  margin-bottom: 0;
+  position: fixed;
+}
+
+@media only screen and (max-width: 910px) {
+  .contents p {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .contents {
+    max-width: 10%; /* Splits elements into two columns */
+  }
+
+  .contents a {
+    font-size: 100%
+  }
+
+    .toctitle {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 910px) {
+  .wrapperartwork {
+    flex-direction: column
+  }
+    .artcaption {
+    display: flex;
+  }
+  
+  .wrapperartwork video {
+    width: 90%;       /* Fills the screen width */    /* Fills the screen height */
+    object-fit: cover;
+
+  }
+    .wrapperartwork img{
+    width: 90%;       /* Fills the screen width */    /* Fills the screen height */
+    object-fit: cover;
+
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .contents {
+    display: none;
+  }
+
+  .body {
+  align-items: center;
+  align-content: center;
+  }
+
+  .wrapperartwork {
+    align-items: center;
+    display: flex;
+    align-content: center;
+  }
+
+  .wrapperartwork img {
+    max-width: 60%;
+    
+  }
+
+  .wrapperartwork video {
+    max-width: 60%;
+
+  }
+
+  .artworktitles {
+    text-align: center;
+    float: left;
+    margin-left: 3rem;
+  }
+
+  .artcaption {
+    margin: 0;
+    margin-left: 1rem;
+    padding:0;
+  }
+
+  .artcaptionleft {
+    margin: 0;
+    margin-left: 1rem;
+    padding:0;
+  }
+}
+
+
+/* music!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.wrappermusic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr;    
+    min-height: 100vh;
+    min-width: 100vh;
+    margin:0;
+}
+
+.musicpagetitle {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  font-size: 300%;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.mymusic {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 100%;
+  background-color: #e8d2e3;
+  padding: 1rem;
+  height: fit-content;
+  color: #353131;
+  margin-left: 5rem;
+  margin-right: 1rem;
+  border-radius: 20px;
+  border:dotted white 10px;
+  font-family: "Risque", serif;
+  text-align: center;
+  box-shadow: 10px 10px 10px #1d1714;
+  align-items: center;
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+.covers {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 100%;
+  background-color: #e8d2e3;
+  padding: 1rem;
+  height: fit-content;
+  color: #353131;
+  margin-right: 5rem;
+  margin-left: 1rem;
+  border-radius: 20px;
+  border:dotted white 10px;
+  font-family: "Risque", serif;
+  text-align: center;
+  box-shadow: 10px 10px 10px #1d1714;
+  align-items: center;
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+.scroll-top {
+  position: fixed;
+}
+
+
+.scroll-top__link {
+  position: fixed;
+  text-decoration:none;
+  border-radius: 20px;
+  background-color:#c3c3c2;
+  border: dotted antiquewhite 5px;
+  padding:1rem;
+  color:#353131;
+  font-weight:700;
+  top: 88%;
+  right: 1%;
+  box-shadow: 4px 4px 4px #1d1714;
+
+}
+
+.scroll-top__link:hover {
+  color:antiquewhite;
+  background-color:#82827c;
+}
+
+@media only screen and (max-width: 810px) {
+  .wrappermusic {
+  display: flex;
+  flex-direction: column; 
+  max-width: 100%;
+  min-width: 20%;
+  }
+
+  .mymusic {
+    margin-left: 1rem;
+    margin-right: 1rem;
+      max-width: 100%;
+  }
+
+  .covers {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 100%;
+    max-width: 100%;
+  }
+
+}
+
+/* GAME JAMS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.wrappergamejams {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr;    
+    min-height: 100vh;
+    min-width: 100vh;
+    margin:0;
+}
+
+.gamejamspagetitle {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  font-size: 300%;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.jamsh1andimg {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  height:fit-content;
+}
+
+.gamejamsh1{
+  font-size: 250%;
+  margin:0;
+}
+
+.gamejamsp, .musicp {
+  font-size: large;
+}
+
+.gamejamsimg {
+  background-image: url(images/big.png);
+  background-size: contain;
+  width: 40rem;
+  margin: 1rem;
+  border:1px solid #e8d2e3;
+  box-shadow: 10px 10px 10px #1d1714;
+  animation: slideshow infinite ease-in-out;
+  margin-bottom: 0;
+}
+
+.hovertext{
+margin:0
+}
+
+.gamejamsimg:hover {
+  animation-name: slideshow;
+  animation-duration: 10s
+}
+
+  @keyframes slideshow{
+     10%{
+      background-image: url(images/big.png);
+     }
+
+     25%{
+      background-image: url(images/tsathsandwich.png);
+     }
+
+      75%{
+      background-image: url(images/tsathvom.png);
+     }
+
+     100%{
+      background-image: url(images/tsathtext.png);
+     }
+   }
+
+.gamejamstext {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 100%;
+  background-color: #e8d2e3;
+  padding: 1rem;
+  height: fit-content;
+  color: #353131;
+  margin: 2rem;
+  border-radius: 20px;
+  border:dotted white 10px;
+  font-family: "Risque", serif;
+  text-align: center;
+  box-shadow: 10px 10px 10px #1d1714;
+  align-items: center;
+  justify-items: center;
+  margin-top: 8rem;
+}
+
+.gamejamstext:active {
+  animation: shakename 0.2s;
+}
+
+.gamejamsh2{
+  font-family: "Henny Penny", system-ui;
+  margin: 0;
+}
+
+.gamejamsli a:link{
+  color:rgb(116, 10, 79);
+  font-size:x-large;
+}
+
+.gamejamsli a:visited{
+  color:rgb(116, 10, 79);
+}
+
+.gamejamsli a:hover{
+  color:rgb(159, 97, 138);
+}
+
+.mtc {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  margin: 0;
+  text-align: center;
+  font-size: 200%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .wrappergamejams {
+  display: flex;
+  flex-direction: column; 
+  max-width: 100%;
+  min-width: 20%;
+  }
+  .gamejamsimg{
+    width: 80%;
+  }
+  .gamejamstext {
+    margin-top: 1rem;
+  }
+
+  .gamejamsh1 {
+    color:#e8d2e3;
+    text-shadow: 1px 1px 2px #645852;
+    font-size: 1.6rem;
+  }
+}
+
+/* CONTACT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.wrappercontact {
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-rows: auto 1fr;    
+    min-height: 100vh;
+    min-width: 100vh;
+    margin:0;
+}
+
+.contactpagetitle {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  font-size: 300%;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.container{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: fit-content;
+    background-color: #e8d2e3;
+    padding: .5rem;
+    height: fit-content;
+    color: #353131;
+    margin: 4rem;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    border:dotted white 10px;
+    font-family: "Risque", serif;
+    text-align: center;
+    box-shadow: 10px 10px 10px #1d1714;
+    align-items: center;
+    justify-items: center;
+}
+
+.wannaworktogether {
+  margin-left: 1.5rem;
+}
+
+form{
+    width: 90%;
+}
+
+ label{
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+} 
+
+input,textarea{
+    width: 100%;
+    border: 1px solid #666666;
+    padding: .5rem;
+    font-size: 16px;
+    margin: .5rem;
+    border-radius: 4px;
+    font-family: 'Risque', serif;
+}
+
+button{
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Risque', serif;    
+    color:#353131;
+    background-color: rgb(229, 229, 229);
+    border: 6px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.18);
+    margin-left: 1.5rem;
+}
+
+
+button:hover {
+  color:#faebd7;
+  background-color:#454342;
+}
+
+.socials {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.youtube {
+  width: 10rem;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.youtube:hover {
+    transform: scale(1.1);
+}
+
+.twitter {
+  width: 10rem;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.twitter:hover {
+    transform: scale(1.1);
+}
+
+.bsky {
+  width: 10rem;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.bsky:hover {
+    transform: scale(1.1);
+}
+
+.smartmorg {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.contactimg {
+  margin-top: 2rem;
+  width: 30rem;
+}
+
+  .smartmorg:active{
+     animation:  shake 0.2s  ;
+   }
+
+  @media only screen and (max-width: 1020px) {
+ 
+  .wrappercontact {
+  display: flex;
+  flex-direction: column; 
+  max-width: 100%;
+  min-width: 20%;
+  }
+
+  .container {
+    display: flex;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .smartmorg {
+    display: none;
+  }
+
+  .contactimg {
+    display:none;
+  }
+  }
+
+
+/* NAV STUFF!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.headerall{
+    position: sticky; 
+    top: 0;
+}
+nav{
+    display:grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: .5fr .5fr .5fr .5fr .5fr;
+    max-width: 100%;
+    min-height: 100%;
+    margin-top: .2rem;
+    margin-bottom: 2rem;
+
+}
+
+.navbar {
+    z-index: 999;
+}
+
+nav a {
+    position:relative;
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    text-decoration:none;
+    background-color: rgb(195, 195, 194);
+    -moz-box-shadow: 3px 2px 3px 3px rgb(195, 195, 194);
+    -webkit-box-shadow: 3px 2px 3px 3px rgb(195, 195, 194);
+    box-shadow: 3px 2px 3px 3px rgb(195, 195, 194);
+    top:0;
+
+}
+
+.navlaceimg {
+    background-image: url(images/navbarimg.png);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    top: 0;
+}
+
+nav a:link {
+    color:#353131;
+}
+
+nav a:hover {
+    color:rgb(127, 75, 109);
+}
+
+nav a:visited {
+    color:#353131;
+}
+
+nav a:visited:hover{
+  color:rgb(127, 75, 109);
+}
+
+.homenav img {
+  margin-top: .2rem;
+  display: flex;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.homenav img:hover {
+  transform: scale(1.1);
+}
+
+.homenav img:active {
+    animation: buttonshake;
+}
+
+    nav[class=artworknav] {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    p[class=artworknavtext] {
+        margin: 0;
+        padding: 0;
+        margin-left: .5vh;
+    }
+
+    .artworknav img {
+    display: flex;
+    transition: transform 0.2s, border-radius 0.2s;
+    }
+
+.artworknav img:hover {
+  transform: scale(1.1);
+}
+
+nav[class=musicnav] {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.musicnav img {
+  display: flex;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.musicnav img:hover {
+  transform: scale(1.1);
+}
+
+p[class=musicnavtext] {
+    margin: 0;
+    padding: 0;
+    margin-left: .9vh;
+}
+
+    .nav[class=gamejamsnav] {
+        grid-row: 1/2;
+        grid-column: 4/5;
+    }
+
+    .gamejamsnav img {
+  display: flex;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.gamejamsnav img:hover {
+  transform: scale(1.1);
+}
+
+    p[class=gamejamsnavtext] {
+    margin: 0;
+    padding:0;
+    margin-right: .8vh;
+    }
+
+.nav[class=contactnav] {
+    grid-row: 1/2;
+    grid-column: 5/6;
+}
+
+.contactnav img {
+  display: flex;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.contactnav img:hover {
+  transform: scale(1.1);
+}
+
+p[class=contactnavtext] {
+margin:0;
+margin-left: .5vh;
+padding: 0;
+}
+
+/* NAV FOR MUSIC !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.musicheader{
+    top: 0;
+}
+nav{
+    display:grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: .5fr .5fr .5fr .5fr .5fr;
+    max-width: 100%;
+    min-height: 100%;
+    margin-top: .2rem;
+    margin-bottom: 2rem;
+
+}
+
+.navbar {
+    z-index: 999;
+    padding-left: 0;
+}
+
+nav a {
+    position:relative;
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    text-decoration:none;
+    background-color: #c3c3c2;
+    -moz-box-shadow: 3px 2px 3px 3px rgb(195, 195, 194);
+    -webkit-box-shadow: 3px 2px 3px 3px rgb(195, 195, 194);
+    box-shadow: 3px 2px 3px 3px rgb(195, 195, 194);
+    top:0;
+}
+
+.musicnavlaceimg {
+    background-image: url(images/navbarimg.png);
+    background-repeat: repeat-x;
+}
+
+nav a:link {
+    color:#353131;
+}
+
+nav a:hover {
+    color:rgb(127, 75, 109);
+}
+
+nav a:visited {
+    color:#353131;
+}
+
+nav a:visited:hover{
+        color:rgb(127, 75, 109);
+}
+
+.homenav img {
+  margin-top: .2rem;
+  display: flex;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.homenav img:hover {
+  transform: scale(1.1);
+}
+
+.homenav img:active {
+    animation: buttonshake;
+}
+
+    nav[class=artworknav] {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    p[class=artworknavtext] {
+        margin: 0;
+        padding: 0;
+        margin-left: .5vh;
+    }
+
+    .artworknav img {
+    display: flex;
+    transition: transform 0.2s, border-radius 0.2s;
+    }
+
+.artworknav img:hover {
+  transform: scale(1.1);
+}
+
+nav[class=musicnav] {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.musicnav img {
+  display: flex;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.musicnav img:hover {
+  transform: scale(1.1);
+}
+
+p[class=musicnavtext] {
+    margin: 0;
+    padding: 0;
+    margin-left: .9vh;
+}
+
+    .nav[class=gamejamsnav] {
+        grid-row: 1/2;
+        grid-column: 4/5;
+    }
+
+    .gamejamsnav img {
+  display: flex;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.gamejamsnav img:hover {
+  transform: scale(1.1);
+}
+
+    p[class=gamejamsnavtext] {
+    margin: 0;
+    padding:0;
+    margin-right: .8vh;
+    }
+
+.nav[class=contactnav] {
+    grid-row: 1/2;
+    grid-column: 5/6;
+}
+
+.contactnav img {
+  display: flex;
+  transition: transform 0.2s, border-radius 0.2s;
+}
+
+.contactnav img:hover {
+  transform: scale(1.1);
+}
+
+p[class=contactnavtext] {
+margin:0;
+margin-left: .5vh;
+padding: 0;
+}
+
